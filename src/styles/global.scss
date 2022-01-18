@@ -1,0 +1,63 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+
+body {
+  overflow-x: hidden;
+}
+
+.swab {
+  &-container {
+    width: 100vw;
+  }
+  &-button {
+    position: relative;
+    width: 210px;
+    padding-top: 26.25px;
+    padding-bottom: 26.25px;
+    border: none;
+    overflow: hidden;
+    &:hover {
+      .swab-button-background {
+        bottom: 0%;
+      }
+    }
+    &-background {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      bottom: -100%;
+      transition: bottom 0.2s;
+    }
+    &-title {
+      padding-left: 52.5px;
+      color: #fff;
+      white-space: nowrap;
+      font-weight: 500;
+      animation: letskeepit 3s linear infinite;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box !important;
+}
+
+@keyframes letskeepit {
+  from {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@import "~bootstrap/scss/bootstrap";

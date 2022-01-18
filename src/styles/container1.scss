@@ -1,0 +1,91 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+
+.container1 {
+  width: 100%;
+}
+
+.left-con {
+  color: $secondary;
+  transition: width 0.2s;
+  width: 50%;
+}
+
+.fairfightforall {
+  font-size: 6.5rem;
+  padding-left: 48px;
+  margin-top: 192px;
+  font-weight: 600;
+}
+
+.fairfight {
+  position: absolute;
+  top: 210px;
+  z-index: 0;
+  transition: top 0.9s ease;
+}
+
+.forall {
+  position: absolute;
+  width: 40%;
+  top: 330px;
+  transition: top 0.7s ease;
+}
+
+.img {
+  position: relative;
+  width: 102%;
+  top: -30px;
+  left: -4px;
+  &-con {
+    height: 400px;
+    min-width: 320px;
+    margin-top: 356px;
+    overflow: hidden;
+  }
+}
+
+.second-content {
+  margin-top: 82px;
+}
+
+.bosoo-mongol {
+  position: relative;
+  top: 585px;
+  left: -40px;
+  transform: rotate(-90deg);
+  height: 50px;
+  min-width: 250px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.wereall {
+  &-con {
+    margin-top: 380px;
+    margin-left: -100px;
+  }
+  margin-top: 25px;
+  font-weight: 500;
+  width: 160px;
+  color: #fff;
+  &-img {
+    position: absolute;
+    top: 730px;
+    left: 560px;
+    height: 216px;
+    z-index: 1;
+  }
+}
+
+.nums {
+  font-size: 0.74rem;
+}
+
+.nums1 {
+  height: 12px;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+}

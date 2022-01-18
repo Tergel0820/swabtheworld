@@ -1,0 +1,100 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+
+.con3 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-header {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 230px;
+    font-size: 4.25rem;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &-hider {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    transition: height 0.3s, top 0.3s;
+    z-index: 1;
+  }
+  &-footer {
+    width: 100%;
+    height: 110px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+.con3-half-circle {
+  height: 140px;
+  border-top-left-radius: 10000px;
+  border-top-right-radius: 10000px;
+  border: #000 solid 120px;
+  border-bottom: 0;
+  margin-top: 50px;
+}
+
+.con3-body {
+  width: 490px;
+  margin-top: 60px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.percent-con {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.percents-con {
+  margin-top: 50px;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.short-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.long-text {
+  font-size: 16px;
+}
+
+.twiacp {
+  position: relative;
+  transition: top, 0.9s ease, color 0s;
+}
+
+@media screen and (max-width: 1322px) {
+  .header {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 623px) {
+  .header {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .header {
+    font-size: 2.5rem;
+  }
+}

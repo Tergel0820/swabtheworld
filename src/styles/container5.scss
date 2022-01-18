@@ -1,0 +1,78 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+$third: #e0e2ee;
+
+.con5 {
+  background-color: $third;
+  padding-top: 60px;
+  &-left {
+    width: 25%;
+    padding-left: 40px;
+  }
+  &-right {
+    width: 75%;
+  }
+}
+
+.bosoo-mongol-2 {
+  position: static;
+  color: #000;
+  padding-top: 320px;
+  padding-left: 120px;
+}
+
+.itcouldhappen {
+  color: $primary;
+  font-size: 3.1rem;
+  font-weight: 600;
+}
+
+.thousandsofpatients {
+  width: 310px;
+  font-weight: 500;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.looking {
+  color: $primary;
+  font-size: 1.3rem;
+  &-container {
+    margin-top: 20px;
+    border-bottom: $primary 1px solid;
+  }
+  &-con {
+    border-top: $primary solid 1px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 97%;
+    &-1 {
+      padding-left: 40px;
+    }
+  }
+  &-img {
+    &-con {
+      position: relative;
+      height: 190px;
+      width: 190px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 40px;
+    }
+    height: 100%;
+  }
+  &-name {
+    color: $primary;
+    font-size: 2.9rem;
+  }
+  &-title {
+    color: $primary;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  &-location {
+    color: $primary;
+    width: 100%;
+    margin-top: 80px;
+  }
+}

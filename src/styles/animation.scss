@@ -1,0 +1,37 @@
+.animation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &-con {
+    width: 95%;
+    height: 87px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  &-con1 {
+    display: flex;
+    width: 100%;
+  }
+  &-title {
+    white-space: nowrap;
+    font-size: 2.375rem;
+    padding-right: 5rem;
+  }
+}
+
+.long-line {
+  height: 1px;
+  width: 94.5%;
+  background-color: #000;
+}
+
+@keyframes letskeepit {
+  from {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

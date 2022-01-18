@@ -1,0 +1,100 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+
+.con6 {
+  &-right-con {
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+  &-left-con {
+    height: 860px;
+    padding-left: 80px;
+  }
+  &-video {
+    height: 100%;
+    &-con {
+      height: 366px;
+      padding-top: 228px;
+      padding-left: 169px;
+    }
+  }
+  &-button {
+    &-con {
+      padding-left: 359px;
+      padding-top: 80px;
+    }
+  }
+}
+
+.yourstemcells {
+  color: $secondary;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.yourstem {
+  position: relative;
+  top: 18px;
+}
+
+.arebored {
+  position: relative;
+  top: -18px;
+}
+
+.bosoo-mongol {
+  &-3 {
+    top: 70px !important;
+    left: 200px !important;
+  }
+  &-4 {
+    color: $primary !important;
+    top: 70px !important;
+    left: 180px !important;
+  }
+}
+
+.sotinyyet {
+  color: $secondary;
+  font-size: 0.72rem;
+  &-con {
+    width: 180px;
+    padding-left: 10px;
+    padding-top: 438px;
+  }
+}
+
+.findouthow {
+  color: #fff;
+  padding-top: 18px;
+  font-size: 1.1rem;
+}
+
+.con7 {
+  height: 640px;
+  padding-top: 90px;
+  &-left-con {
+    padding-left: 40px;
+  }
+  &-right-con {
+    padding-left: 120px;
+  }
+  &-link-con {
+    margin-top: 160px;
+  }
+  &-img {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(195deg)
+      brightness(95%) contrast(80%);
+  }
+}
+
+.ourpartners {
+  color: $primary;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.partners {
+  position: relative;
+  top: -18px;
+}

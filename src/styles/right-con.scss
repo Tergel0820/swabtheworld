@@ -1,0 +1,338 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+$third: #e0e2ee;
+
+.right-con {
+  background-color: $third;
+  height: 100vh;
+  width: 50%;
+  transition: width 0.2s;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  &-hider {
+    position: absolute;
+    z-index: 3;
+    background-color: $primary;
+    height: 100%;
+  }
+  &-1 {
+    height: 100%;
+    width: 100%;
+  }
+  &-carousel {
+    height: 100%;
+    &-item {
+      height: 100vh;
+      &-1 {
+        animation: boat 3.5s ease-in-out infinite;
+        &-tug {
+          width: 0; 
+          height: 0; 
+          border-top: 60px solid transparent;
+          border-bottom: 60px solid transparent; 
+          border-right: 180px solid #fff;
+          margin-top: 100px;
+          margin-left: 140px;
+        }
+        &-boat {
+          height: 100%;
+          width: 100%;
+          border-bottom-left-radius: 500px;
+          border-bottom-right-radius: 500px;
+          background-color: #fff;
+          &-con {
+            position: absolute;
+            left: 10%;
+            bottom: 120px;
+            z-index: 1;
+            height: 250px;
+            width: 500px;
+          }
+        }
+        &-circle {
+          position: absolute;
+          height: 110px;
+          &-1 {
+            bottom: 350px;
+            z-index: 0;
+            animation: onecircleone 3.5s ease-in-out infinite;
+          }
+          &-2 {
+            bottom: 350px;
+            z-index: 0;
+            animation: onecircletwo 3.5s ease-in-out infinite;
+          }
+        }
+      }
+      &-2 {
+        animation: suuri 3s ease-in-out infinite;
+        transform-origin: bottom center;
+        &-suuri {
+          width: 250px;
+          height: 250px;
+          border-top-right-radius: 0;
+          border-top-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 100%;
+          background: #fff;
+          margin-bottom: 30px;
+          margin-left: 230px;
+          transform: rotate(-45deg);
+        }
+        &-circle {
+          &-1 {
+            top: 130px;
+            animation: twocircleone 3s ease-in-out infinite;
+          }
+          &-2 {
+            top: 239px;
+            animation: twocircletwo 3s ease-in-out infinite;
+          }
+          &-3 {
+            top: 347px;
+            animation: twocircleone 3s ease-in-out infinite;
+          }
+        }
+      }
+      &-3 {
+        &-halfcircle {
+          &-con {
+            height: 500px;
+            width: 500px;
+          }
+          height: 250px;
+          width: 500px;
+          border-bottom-left-radius: 500px;
+          border-bottom-right-radius: 500px;
+          background-color: #fff;
+          transform-origin: 50% 0%;
+          animation: halfcircle 3s ease infinite;
+        }
+        &-circle {
+          &-1 {
+            position: relative;
+            z-index: 1;
+            top: 370px;
+            animation: threecircleone 1.5s linear infinite;
+            &-con {
+              height: 130px;
+              width: 110px;
+              position: absolute;
+              top: 180px;
+              left: 179px;
+            }
+          }
+          &-2 {
+            z-index: 1;
+            animation: threecircletwo 1.5s ease-in infinite;
+          }
+          &-3 {
+            z-index: 1;
+            animation: threecirclethree 3s ease-in infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  & button {
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    &.active {
+      background-color: $primary;
+    }
+  }
+}
+
+@keyframes boat {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes onecircleone {
+  0% {
+    left: 470px;
+    transform: rotate(120deg);
+  }
+  50% {
+    left: 215px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 470px;
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes onecircletwo {
+  0% {
+    left: 357px;
+    transform: rotate(120deg);
+  }
+  50% {
+    left: 120px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 357px;
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes suuri {
+  0% {
+    transform: rotate(-3deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes twocircleone {
+  0% {
+    transform: rotate(45deg);
+    left: 295px;
+  }
+  25% {
+    transform: rotate(0deg);
+    left: 305px;
+  }
+  50% {
+    transform: rotate(45deg);
+    left: 295px;
+  }
+  75% {
+    transform: rotate(0deg);
+    left: 305px;
+  }
+  100% {
+    transform: rotate(45deg);
+    left: 295px;
+  }
+}
+
+@keyframes twocircletwo {
+  0% {
+    transform: rotate(0deg);
+    left: 310px;
+  }
+  25% {
+    transform: rotate(50deg);
+    left: 280px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 310px;
+  }
+  75% {
+    transform: rotate(50deg);
+    left: 280px;
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 310px;
+  }
+}
+
+@keyframes halfcircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  80% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes threecircleone {
+  0% {
+    height: 110px;
+  }
+  50% {
+    height: 110px;
+  }
+  55% {
+    height: 80px;
+  }
+  65% {
+    height: 130px;
+  }
+  75% {
+    height: 110px;
+  }
+  100% {
+    height: 110px;
+  }
+}
+
+@keyframes threecircletwo {
+  0% {
+    top: -130px;
+    left: 179px;
+  }
+  50% {
+    top: 500px;
+    left: 179px;
+    transform-origin: 500px 200px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 500px;
+    left: 179px;
+    transform-origin: 500px 200px;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes threecirclethree {
+  0% {
+    top: -130px;
+    left: 179px;
+  }
+  50% {
+    top: -130px;
+    left: 179px;
+  }
+  75% {
+    top: 500px;
+    left: 179px;
+    transform-origin: 500px 200px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 500px;
+    left: 179px;
+    transform-origin: 500px 200px;
+    transform: rotate(90deg);
+  }
+}

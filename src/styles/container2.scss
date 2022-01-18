@@ -1,0 +1,90 @@
+$primary: #5e62d1;
+$secondary: #5fecc8;
+$third: #e0e2ee;
+
+.swab-con2 {
+  padding-top: 300px;
+  width: 100vw;
+  background-color: $primary;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: $secondary;
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.itspretty {
+  font-size: 3rem;
+  font-weight: 600;
+  &-con {
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.bosoo-mongol-1 {
+  padding-left: 195px;
+  width: 189px;
+  transform-origin: center center;
+}
+
+.step {
+  &-s {
+    margin-top: 158px;
+    width: 100%;
+    display: flex;
+  }
+  &-con {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    height: 150px;
+    padding-bottom: 80px;
+    flex-direction: column;
+    border-bottom: #fff solid 1px;
+  }
+  &-con1 {
+    width: 100%;
+    display: flex;
+    height: 245px;
+  }
+  &-container {
+    width: 99.2%;
+    margin-left: -32px;
+    box-sizing: content-box;
+  }
+  &-line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+  }
+  &-big-title {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 60px;
+    width: 60%;
+  }
+  &-img {
+    height: 140px;
+    margin-top: -1px;
+    &-container {
+      height: 173px;
+      min-width: 173px;
+      margin-left: 44px;
+    }
+    &-con {
+      position: relative;
+      top: -20px;
+      background-color: $third;
+      height: 173px;
+      min-width: 173px;
+      border-radius: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  &-step {
+    font-size: 19px;
+    white-space: nowrap;
+  }
+}
